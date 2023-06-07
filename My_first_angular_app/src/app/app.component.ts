@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { ThemeProps } from './type';
-import { headerThemes } from './type';
+import { ThemeProps, headerThemes } from './type';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export  class AppComponent {
   title:string = 'first-angular-app';
   services:string[] = ["Application Services","Infrastructure Services","Testing Services"]
   themes:string[] = ["dark" , "light", " blue " ," darkred" ]
@@ -26,8 +26,16 @@ export class AppComponent {
   ]
 
   currentHeaderClass:headerThemes = this.headerClasses[2]
+  
+  hfont: string ="#F1F6F8"
+
 
   changeTheme(index:number):void {
      this.currentTheme = this.themeStyles[index]
+  }
+
+  print(x:any){
+   console.log(x)
+   console.log(this.currentHeaderClass)
   }
 }
