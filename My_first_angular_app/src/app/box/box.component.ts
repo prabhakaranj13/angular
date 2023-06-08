@@ -12,7 +12,7 @@ export class BoxComponent  implements OnInit{
 
   @Input("title") 
   boxtitle:string=""
-  features:string[]=[]
+  features:any[]=[]
   
   constructor(private ds:DataService){
     // ds.getFeatures(this.boxtitle)
@@ -27,6 +27,8 @@ export class BoxComponent  implements OnInit{
   //try
   //if we want any logic to run exactly once after constructor execution
   //that can be put in a function called ngOnInit which is part of the interface called OnInit 
- 
+  type(x:any):string{
+    return typeof(x)
+}
 
 }

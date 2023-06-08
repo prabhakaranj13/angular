@@ -29,6 +29,8 @@ export  class AppComponent {
   
   hfont: string ="#F1F6F8"
 
+  message:string="no message yet!!!"
+
 
   changeTheme(index:number):void {
      this.currentTheme = this.themeStyles[index]
@@ -37,5 +39,8 @@ export  class AppComponent {
   print(x:any){
    console.log(x)
    console.log(this.currentHeaderClass)
+  }
+  receivefromchild(feature:string){
+   this.message="the user has selected the feature-->"+feature
   }
 }
