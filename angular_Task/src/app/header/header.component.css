@@ -1,0 +1,19 @@
+#image-area{
+    contain-intrinsic-width: 100*400;
+}
+
+#left{
+    height: 40px;
+    position: absolute;
+    top:27%;
+    left:48%;
+    margin-top: 25px;
+}
+#right{
+    height: 40px;
+    position: absolute;
+    top:27%;
+    right: 48%;
+    margin-top: 25px;
+}
+    
